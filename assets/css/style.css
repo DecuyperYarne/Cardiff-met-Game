@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background: url("assets/bg/homescreen.jpg") no-repeat white;
+    background-size: cover;
+    font-family: 'Open Sans';
+}
+
+main {
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    width: 450px;
+}
+
+aside {
+    position: absolute;
+    top: 250px;
+    right: 300px;
+    width: 450px;
+}
+
+h1 {
+    font-family: 'Octin Prison';
+    font-size: 4.5rem;
+    text-align: center;
+    color: #ff0a00;
+}
+
+input, button {
+    width: 250px;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+    font-size: 2rem;
+    padding: 5px 10px;
+    border: 1px solid black;
+    box-shadow: 5px 4px rgba(255,255,255, 0.2) ;
+}
+
+button {
+    padding: 0;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+button:hover, button:active {
+    box-shadow: 5px 4px rgba(255,255,255, 0.5) ;
+    cursor: pointer;
+}

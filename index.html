@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Border Control - Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<main>
+    <h1>Border Control</h1>
+</main>
+
+<aside>
+    <input type="text" id="userName" placeholder="Enter your name" />
+    <button onclick="start()">Start!</button>
+</aside>
+
+<script>
+    function start() {
+        var scores = localStorage.getItem('scores');
+        console.log(scores);
+        if (scores === null) {
+            var userName = document.getElementById('userName').value;
+            localStorage.setItem('scores', JSON.stringify([{
+                userName: userName,
+                score: 0
+            }]));
+        } else {
+            scores = JSON.parse(localStorage.getItem('scores'));
+            scores.push({
+                userName: document.getElementById('userName').value,
+                score: 0
+            });
+            localStorage.setItem('scores', JSON.stringify(scores));
+        }
+
+        localStorage.setItem('currentUser', userName);
+
+        window.location = "index2.html";
+    }
+</script>
+</body>
+
+</html>
