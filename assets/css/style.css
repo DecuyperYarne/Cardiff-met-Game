@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: url("assets/bg/homescreen.jpg") no-repeat white;
+    background: url("../bg/homescreen.jpg") no-repeat white;
     background-size: cover;
     font-family: 'Open Sans';
 }

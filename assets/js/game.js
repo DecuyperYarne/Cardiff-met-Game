@@ -108,5 +108,5 @@ function nextScreen() {
     scores[scores.length - 1].score = score;
     console.log(scores);
     localStorage.setItem('scores', JSON.stringify(scores));
-    window.location = 'index3.html';
+    window.location = 'highscores.html';
 }
